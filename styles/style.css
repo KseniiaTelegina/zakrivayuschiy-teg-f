@@ -17,4 +17,12 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-style: var(--font);
+  font-variation-settings: 'wght' 400;
+  background-color: var(--bg-color);
+  background-image: 
+                    repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+                    repeating-linear-gradient(#E7E7E7, #E7E7E7 2px, #1A1A1A 2px, #1A1A1A 4px);
+  /* background-position: top; */
+  background-size: cover;
 }
