@@ -9,7 +9,9 @@
 }
 
 body {
-  margin: 0;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
 }
 
 h1,
@@ -21,7 +23,8 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+article {
   margin: 0;
   padding: 0;
 }
@@ -35,6 +38,9 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 ul,
