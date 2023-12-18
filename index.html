@@ -2,30 +2,29 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="color-scheme" content="light dark">
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+    <link rel="stylesheet" href="./styles/variables.css"/>
+    <link rel="stylesheet" href="./styles/globals.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/animations.css"/>
+    <link rel="stylesheet" href="./styles/themes.css"/>
     <link rel="icon" href="./images/favicon.ico" sizes="any">
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/images/favicon.png">
-    
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <h1  class="page__title">
+      <a class="page__logo"
+      href="#0">
         &lt;/HTML&gt;
-      </h1>
-      <h2 class="header__title">
+      </a>
+      <h1 class="header__title">
         закрывающий тег
-      </h2>
+      </h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -55,69 +54,70 @@
     <main class="main">
       <article class="card">
         <h2 class="card__title">
-          Фритрек и нулевой спринт:
-          <br>
-          Подготовка к работе
+          Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="card__picture">
-          <p class="card__label">
-            &lt;/НАЧАЛО&gt;
-          </p>
           <img class="card__image"
-          src="./images/monkey.png"
-          alt="">
+            src="./images/monkey.png"
+            alt="Обезьяна в очках держит открытую книгу">
+          <div class="card__label">
+              &lt;/НАЧАЛО&gt;
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
             В период долгих размышлений, какой профессией я хочу овладеть, звезды сошлись над Фронтендом,
-            а Яндекс Практикум указал мне на этот путь...<br>
+            а Яндекс Практикум указал мне на этот путь...
+          </p>
+          <p class="card__text">
             Оставалось лишь поверить в себя...
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
-                  18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30
-                  15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 
-                  9H18V12H21V9Z" fill="var(--color-heart)"/>
+                    18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30
+                    15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 
+                    9H18V12H21V9Z" fill="var(--color-heart)"/>
                   <path class="main-body" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 
-                  18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 
-                  12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 
-                  12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z" fill="none"/>
+                    18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 
+                    12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 
+                    12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z" fill="none"/>
                   <path class="core" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
-                  fill="none"/>
+                    fill="none"/>
                 </g>
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 
-                3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--bg-heart)"/>
+                  3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--bg-heart)"/>
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
           </div>
-        </div>
       </article>
       <article class="card">
         <h2 class="card__title">
           1 спринт: Я — чистый лист
         </h2>
         <div class="card__picture">
-          <p class="card__label">
-            &lt;/ЧТОоО?&gt;
-          </p>
-          <img class="card__image filter_contrast"
+          <img class="card__image filter__contrast"
           src="./images/monkey1.png"
-          alt="">
+          alt="Веселая обезьяна держится за голову, выпучив глаза и вытащив язык">
+          <div class="card__label">
+            &lt;/ЧТОоО?&gt;
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
             Именно в таком состоянии я начала проходить 1 спринт. Было ничего непонятно, но дико интересно!
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
@@ -136,11 +136,10 @@
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
-          </div>
         </div>
       </article>
       <article class="card">
@@ -148,20 +147,23 @@
           1 спринт: А если не получится?
         </h2>
         <div class="card__picture">
-          <p class="card__label">
-            &lt;/ПЛАК&gt;
-          </p>
-          <img class="card__image filter_sepia"
+          <img class="card__image filter__sepia"
           src="./images/monkey2.png"
-          alt="">
+          alt="Грустная обезьяна с бантом на голове сидит, вытянув задние лапы вперед">
+          <div class="card__label">
+            &lt;/ПЛАК&gt;
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
-            Иногда дурные мысли посещали мою светлую голову...<br>
+            Иногда дурные мысли посещали мою светлую голову...
+          </p>
+          <p class="card__text">
             Вдруг Фронтенд не для меня, и ничего не получится...
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
@@ -180,11 +182,10 @@
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
-          </div>
         </div>
       </article>
       <article class="card">
@@ -192,22 +193,23 @@
           2 спринт: Погоня за идеалом
         </h2>
         <div class="card__picture">
-          <p class="card__label">
+          <img class="card__image filter__invert"
+            src="./images/monkey3.png"
+            alt="Крутая обезьяна в темных очках стоит, вытянув переднюю лапу, как отбить пять">
+          <div class="card__label">
             &lt;/БуУ&gt;
-          </p>
-          <img class="card__image filter_invert"
-          src="./images/monkey3.png"
-          alt="">
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
             Но я решила не сдаваться! <br>
             Ни шагу назад,<br>
             Ни шагу на месте!<br>
             Только вперед к рабочему месту!
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
@@ -226,11 +228,10 @@
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
-          </div>
         </div>
       </article>
       <article class="card">
@@ -238,20 +239,23 @@
           2 спринт: О тех, кто рядом
         </h2>
         <div class="card__picture">
-          <p class="card__label">
-            &lt;/КОМАНДА&gt;
-          </p>
-          <img class="card__image filter_saturate"
+          <img class="card__image filter__saturate"
           src="./images/monkey4.png"
-          alt="">
+          alt="Десять веселых обезьян">
+          <div class="card__label">
+            &lt;/КОМАНДА&gt;
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
-            Команда Яндекс Практикум и студенты с потока всегда рядом, поэтому унывать не приходится.<br>
+            Команда Яндекс Практикум и студенты с потока всегда рядом, поэтому унывать не приходится.
+          </p>
+          <p class="card__text">
             Всегда кто-нибудь поможет, подскажет, поддержит! За что огромное спасибо!
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
@@ -270,11 +274,10 @@
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
-          </div>
         </div>
       </article>
       <article class="card">
@@ -282,19 +285,20 @@
           3 спринт: Обходные стратегии
         </h2>
         <div class="card__picture">
-          <p class="card__label">
-            &lt;/Ехууу&gt;
-          </p>
-          <img class="card__image filter_blur"
+          <img class="card__image filter__blur"
           src="./images/monkey5.png"
-          alt="">
+          alt="Обезьяна сидит на ветке, заваривает пакетик чая, хвостом держит чайник">
+          <div class="card__label">
+            &lt;/Ехууу&gt;
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
             И тут показалось, что дзен пойман, что все могу и уже умею... с ощущением легкости плывешь по течению...
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
@@ -313,11 +317,10 @@
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
-          </div>
         </div>
       </article>
       <article class="card">
@@ -325,19 +328,20 @@
           3 спринт: Когда опускаются руки
         </h2>
         <div class="card__picture">
-          <p class="card__label">
-            &lt;/Баааам&gt;
-          </p>
-          <img class="card__image filter_grayscale"
+          <img class="card__image filter__grayscale"
           src="./images/monkey6.png"
-          alt="">
+          alt="Задумчивая обезьяна чешет голову">
+          <div class="card__label">
+            &lt;/Баааам&gt;
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
             Новый спринт. Новые эмоции. Сколько еще всего неизведанного? Это точно реально познать?
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
@@ -356,11 +360,10 @@
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
-          </div>
         </div>
       </article>
       <article class="card">
@@ -368,19 +371,20 @@
           «Сейчас я здесь»
         </h2>
         <div class="card__picture">
-          <p class="card__label">
-            &lt;Уля-ля&gt;
-          </p>
-          <img class="card__image filter_saturate_contrast"
+          <img class="card__image filter_saturate__contrast"
           src="./images/monkey7.png"
-          alt="">
+          alt="Обезьяна сидит на лужайке, вокруг летают бабочки и растут цветы">
+          <div class="card__label">
+            &lt;Уля-ля&gt;
+          </div>
         </div>
-        <div class="card__container">
+        <div class="card__container_text">
           <p class="card__text">
             Вот это я молодец! Ведь если долго мучиться, что-нибудь получиться! А уже можно искать работу? 
           </p>
+        </div>
         <div class="card__button">
-            <button class="card__icon-button is-liked" type="button">
+            <button class="card__icon-button" type="button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 
@@ -399,38 +403,41 @@
                 </svg>
             </button>
             <button class="button card__like-button" type="button">
-              <span class="button__text">
+              <p class="button__text">
                 Like
-              </span>
+              </p>
             </button>
-          </div>
         </div>
       </article>
     </main>
     <footer class="footer">
       <button 
-      class="button footer__button" 
-      type="button"
-      onclick="window['action'].showModal()" 
-      aria-controls="action">
+        class="button footer__button" 
+        type="button"
+        onclick="window['action'].showModal()" 
+        aria-controls="action">
+          <svg viewBox="0 0 29 28" class="floppy">
+            <use href="./svg/floppy.svg#floppy">
+          </svg>
+          <p class="button__text">
+            Сохранить на память
+          </p>
+      </button>
+      <dialog id="action" class="dialog">
         <svg viewBox="0 0 29 28" class="floppy">
           <use href="./svg/floppy.svg#floppy">
         </svg>
         <span class="button__text">
-          Сохранить на память
+          Вставьте дискету, чтобы продолжить
         </span>
-      </button>
-      <dialog id="action" class="dialog">
-          <svg viewBox="0 0 29 28" class="floppy">
-            <use href="./svg/floppy.svg#floppy">
-          </svg>
-          <span class="button__text">
-            Вставьте дискету, чтобы продолжить
-          </span>
         <button
-        class="button dialog__button button__text"
-        type="button" 
-        onclick="window['action'].close()">OK</button>
+          class="button dialog__button"
+          type="button" 
+          onclick="window['action'].close()">
+          <p class="button__text">
+            OK
+          </p>
+        </button>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
