@@ -25,7 +25,7 @@
   background-image: 
     repeating-linear-gradient(0deg, var(--gr-color) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(90deg, var(--gr-color) 0 2px, transparent 2px 4px),
-    linear-gradient( var(--gr-color-medium) 0%, var(--gr-color-medium) 0.1%, var(--gr-color-dark) 100% );
+    linear-gradient(var(--gr-direction), var(--gr-color-medium) 0%,  var(--gr-color-dark) 0.01%, var(--gr-color-medium) 100%);
   background-size: cover;
 }
 
@@ -148,17 +148,14 @@
 
 .card__picture {
   display: flex;
-  inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
-  block-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  flex-direction: row;
   z-index: 0;
 }
 
 .card__image {
-  position: relative;
   inline-size: 100%;
   object-fit: contain;
   object-position: center;
-  vertical-align: bottom;
 }
 
 .card__label {

@@ -14,6 +14,7 @@
     --gr-color: #d3d3d3;
     --gr-color-medium: #e7e7e7;
     --gr-color-dark: #1a1a1a;
+    --gr-direction: to top;
     --accent-color: #000;
     --color-shadow: #E7E7E7;
     --color-text: #FFF;
@@ -31,6 +32,7 @@
     --gr-color: #000;
     --gr-color-medium: #007f0c;
     --gr-color-dark: #004306;
+    --gr-direction: to bottom;
     --accent-color: #00CC14;
     --color-shadow: #000;
     --color-text: #00CC14;
@@ -49,6 +51,7 @@
         --gr-color: #000;
         --gr-color-medium: #007f0c;
         --gr-color-dark: #004306;
+        --gr-direction: to bottom;
         --accent-color: #00CC14;
         --color-shadow: #000;
         --color-text: #00CC14;
