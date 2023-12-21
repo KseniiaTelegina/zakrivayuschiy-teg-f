@@ -87,8 +87,7 @@
 }
 
 .theme-menu__button:hover,  
-.theme-menu__button:disabled
-{
+.theme-menu__button:disabled {
   opacity: 0.6;
   transition: 0.3s ease;
 }
@@ -329,7 +328,7 @@ dialog:not([open]) {
   grid-column: span 2;
 }
 
-.dialog .floppy  {
+.dialog .floppy {
   inline-size: 39px;
   block-size: 39px;
   align-self: center;
