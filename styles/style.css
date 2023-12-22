@@ -22,10 +22,7 @@
   color: var(--accent-color);
   font-variation-settings: 'wght' 400;
   background-color: var(--bg-color);
-  background-image: 
-    repeating-linear-gradient(90deg, var(--gr-color) 0 2px, transparent 2px 4px), 
-    repeating-linear-gradient(0deg, var(--gr-color)  0 2px, transparent 2px 4px), 
-    linear-gradient(var(--gr-color-medium) 0%, var(--gr-color-medium) 0.01%, var(--gr-color-dark) 100%);
+  background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
 }
